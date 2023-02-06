@@ -4,22 +4,6 @@ import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import data from './attractions.json';
 
 const cityIcon = require('./images/chicago.png');
-/*
-const row = (item) => (
-  <View style={styles.row}>
-    <View style={styles.iconContainer}>
-      <Image source={cityIcon} style={styles.icon} />
-    </View>
-    <View>
-      <Text style={styles.attraction}>{item.name}</Text>
-    </View>
-    <View style={styles.info}>
-      <Text>{item.modifiedURL}</Text>
-      <Text style={styles.modifiedURL}>{item.modifiedURL}</Text>
-    </View>
-  </View>
-);
-*/
 
 const row = ({item}) => (
   <View style={styles.row}>
@@ -49,8 +33,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#ede2e0', 
-    //alignItems: 'center',
-    //justifyContent: 'center',
   },
   row: {
     borderColor: '#7b7983',
@@ -79,7 +61,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 70,
     width: 70,
-    //paddingRight: 20,
   },
   icon: {
     height: 45,
